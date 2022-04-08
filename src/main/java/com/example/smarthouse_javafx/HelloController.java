@@ -10,18 +10,9 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
-public class HelloController {
+public  class HelloController {
     List<Socket> socketsList  = new ArrayList<>();
-    Socket socket1 = new Socket();
-    Socket socket2 = new Socket();
-    Socket socket3 = new Socket();
-    Socket socket4 = new Socket();
-    Socket socket5 = new Socket();
-    Socket socket6 = new Socket();
-    Socket socket7 = new Socket();
-    Socket socket8 = new Socket();
-    Socket socket9 = new Socket();
-    Socket socket10 = new Socket();
+
 
     public HelloController() {
         socketsList.add(socket1);
@@ -105,6 +96,8 @@ public class HelloController {
     @FXML
     private Label text_socket_1;
 
+
+
     @FXML
     private Label text_socket_10;
 
@@ -131,6 +124,18 @@ public class HelloController {
 
     @FXML
     private Label text_socket_9;
+
+
+    Socket socket1 = new Socket(text_socket_1);
+    Socket socket2 = new Socket(text_socket_2);
+    Socket socket3 = new Socket(text_socket_3);
+    Socket socket4 = new Socket(text_socket_4);
+    Socket socket5 = new Socket(text_socket_5);
+    Socket socket6 = new Socket(text_socket_6);
+    Socket socket7 = new Socket(text_socket_7);
+    Socket socket8 = new Socket(text_socket_8);
+    Socket socket9 = new Socket(text_socket_9);
+    Socket socket10 = new Socket(text_socket_10);
 
     @FXML
     void initialize() {
@@ -164,7 +169,6 @@ public class HelloController {
         assert text_socket_7 != null : "fx:id=\"text_socket_7\" was not injected: check your FXML file 'hello-view.fxml'.";
         assert text_socket_8 != null : "fx:id=\"text_socket_8\" was not injected: check your FXML file 'hello-view.fxml'.";
         assert text_socket_9 != null : "fx:id=\"text_socket_9\" was not injected: check your FXML file 'hello-view.fxml'.";
-
 
 
         on_electro.setOnAction(actionEvent -> {

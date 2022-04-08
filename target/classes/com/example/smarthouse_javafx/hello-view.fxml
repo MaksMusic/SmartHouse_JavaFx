@@ -51,7 +51,7 @@
       <Label fx:id="text_socket_9" layoutX="719.0" layoutY="365.0" text="выкл" />
       <Label fx:id="text_socket_10" layoutX="721.0" layoutY="401.0" text="выкл" />
       <Button fx:id="device_floor2" layoutX="636.0" layoutY="436.0" mnemonicParsing="false" style="-fx-background-color: #F0E68C;" text="Устройства" />
-      <Button fx:id="device_floor21" layoutX="48.0" layoutY="436.0" mnemonicParsing="false" style="-fx-background-color: #F0E68C;" text="Устройства" />
+      <Button fx:id="device_floor1" layoutX="48.0" layoutY="436.0" mnemonicParsing="false" style="-fx-background-color: #F0E68C;" text="Устройства" />
 
    </children>
 </AnchorPane>
