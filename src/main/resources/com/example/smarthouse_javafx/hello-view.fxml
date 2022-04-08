@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-image: house;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.smarthouse_javafx.HelloController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0">
+         <image>
+            <Image url="@house.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="text_Smart_House" layoutX="290.0" layoutY="14.0" text="Smart House" textFill="#16c116e0">
+         <font>
+            <Font name="Cascadia Mono Regular" size="40.0" />
+         </font>
+      </Label>
+      <Button fx:id="on_electro" layoutX="299.0" layoutY="449.0" mnemonicParsing="false" style="-fx-background-color: #32CD32;" text="Включить Электричество" />
+      <Button fx:id="off_electro" layoutX="296.0" layoutY="488.0" mnemonicParsing="false" style="-fx-background-color: #DC143C;" text="Отключить Электричество" />
+      <Button fx:id="on_one_floor1" layoutX="50.0" layoutY="140.0" mnemonicParsing="false" style="-fx-background-color: #32CD32;" text="Включить 1 этаж" />
+      <Button fx:id="off_two_floor1" layoutX="48.0" layoutY="182.0" mnemonicParsing="false" style="-fx-background-color: #DC143C;" text="Отключить1 этаж" />
+      <Label fx:id="offOn" layoutX="370.0" layoutY="277.0" prefHeight="38.0" prefWidth="37.0" text="OFF" textFill="#f40e0e" AnchorPane.bottomAnchor="285.0" AnchorPane.leftAnchor="370.0" AnchorPane.rightAnchor="393.0" AnchorPane.topAnchor="277.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="on_two_floor2" layoutX="624.0" layoutY="140.0" mnemonicParsing="false" style="-fx-background-color: #32CD32;" text="Включить 2 этаж" />
+      <Button fx:id="off_two_floor2" layoutX="622.0" layoutY="182.0" mnemonicParsing="false" style="-fx-background-color: #DC143C;" text="Отключить1 этаж" />
+      <Button fx:id="socket_1" layoutX="48.0" layoutY="251.0" mnemonicParsing="false" style="-fx-background-color: #66CDAA;" text="1 розетка" />
+      <Button fx:id="socket_2" layoutX="48.0" layoutY="287.0" mnemonicParsing="false" style="-fx-background-color: #66CDAA;" text="2 розетка" />
+      <Button fx:id="socket_3" layoutX="48.0" layoutY="323.0" mnemonicParsing="false" style="-fx-background-color: #66CDAA;" text="3 розетка" />
+      <Button fx:id="socket_4" layoutX="48.0" layoutY="361.0" mnemonicParsing="false" style="-fx-background-color: #66CDAA;" text="4 розетка" />
+      <Button fx:id="socket_5" layoutX="48.0" layoutY="397.0" mnemonicParsing="false" style="-fx-background-color: #66CDAA;" text="5 розетка" />
+      <Label fx:id="text_socket_1" layoutX="132.0" layoutY="255.0" text="выкл" />
+      <Label fx:id="text_socket_2" layoutX="133.0" layoutY="291.0" text="выкл" />
+      <Label fx:id="text_socket_3" layoutX="133.0" layoutY="327.0" text="выкл" />
+      <Label fx:id="text_socket_4" layoutX="133.0" layoutY="365.0" text="выкл" />
+      <Label fx:id="text_socket_5" layoutX="133.0" layoutY="401.0" text="выкл" />
+      <Button fx:id="socket_6" layoutX="636.0" layoutY="251.0" mnemonicParsing="false" style="-fx-background-color: #66CDAA;" text="6 розетка" />
+      <Button fx:id="socket_8" layoutX="636.0" layoutY="323.0" mnemonicParsing="false" style="-fx-background-color: #66CDAA;" text="8 розетка" />
+      <Button fx:id="socket_9" layoutX="636.0" layoutY="361.0" mnemonicParsing="false" style="-fx-background-color: #66CDAA;" text="9 розетка" />
+      <Button fx:id="socket_10" layoutX="636.0" layoutY="397.0" mnemonicParsing="false" style="-fx-background-color: #66CDAA;" text="10 розетка" />
+      <Button fx:id="socket_7" layoutX="636.0" layoutY="287.0" mnemonicParsing="false" style="-fx-background-color: #66CDAA;" text="7 розетка" />
+      <Label fx:id="text_socket_6" layoutX="721.0" layoutY="255.0" text="выкл" />
+      <Label fx:id="text_socket_8" layoutX="721.0" layoutY="327.0" text="выкл" />
+      <Label fx:id="text_socket_7" layoutX="721.0" layoutY="291.0" text="выкл" />
+      <Label fx:id="text_socket_9" layoutX="719.0" layoutY="365.0" text="выкл" />
+      <Label fx:id="text_socket_10" layoutX="721.0" layoutY="401.0" text="выкл" />
+      <Button fx:id="device_floor2" layoutX="636.0" layoutY="436.0" mnemonicParsing="false" style="-fx-background-color: #F0E68C;" text="Устройства" />
+      <Button fx:id="device_floor21" layoutX="48.0" layoutY="436.0" mnemonicParsing="false" style="-fx-background-color: #F0E68C;" text="Устройства" />
+
+   </children>
+</AnchorPane>
