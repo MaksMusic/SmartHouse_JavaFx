@@ -3,13 +3,15 @@ package com.example.smarthouse_javafx;
 
 
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
 public class HelloController {
-
+    List<Socket> socketsList  = new ArrayList<>();
     Socket socket1 = new Socket();
     Socket socket2 = new Socket();
     Socket socket3 = new Socket();
@@ -20,6 +22,19 @@ public class HelloController {
     Socket socket8 = new Socket();
     Socket socket9 = new Socket();
     Socket socket10 = new Socket();
+
+    public HelloController() {
+        socketsList.add(socket1);
+        socketsList.add(socket2);
+        socketsList.add(socket3);
+        socketsList.add(socket4);
+        socketsList.add(socket5);
+        socketsList.add(socket6);
+        socketsList.add(socket7);
+        socketsList.add(socket8);
+        socketsList.add(socket9);
+        socketsList.add(socket10);
+    }
 
     @FXML
     private ResourceBundle resources;
@@ -156,6 +171,7 @@ public class HelloController {
             offOn.setStyle("-fx-text-fill-color: green;");
             offOn.setStyle("-fx-text-fill: #7FFF00;");
             offOn.setText("On");
+            socketsList.forEach(socket -> {socket.setOnOff(true);});
 
 
         });
