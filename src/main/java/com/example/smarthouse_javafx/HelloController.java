@@ -10,6 +10,17 @@ import javafx.scene.control.Label;
 
 public class HelloController {
 
+    Socket socket1 = new Socket();
+    Socket socket2 = new Socket();
+    Socket socket3 = new Socket();
+    Socket socket4 = new Socket();
+    Socket socket5 = new Socket();
+    Socket socket6 = new Socket();
+    Socket socket7 = new Socket();
+    Socket socket8 = new Socket();
+    Socket socket9 = new Socket();
+    Socket socket10 = new Socket();
+
     @FXML
     private ResourceBundle resources;
 
@@ -138,6 +149,8 @@ public class HelloController {
         assert text_socket_7 != null : "fx:id=\"text_socket_7\" was not injected: check your FXML file 'hello-view.fxml'.";
         assert text_socket_8 != null : "fx:id=\"text_socket_8\" was not injected: check your FXML file 'hello-view.fxml'.";
         assert text_socket_9 != null : "fx:id=\"text_socket_9\" was not injected: check your FXML file 'hello-view.fxml'.";
+
+
 
         on_electro.setOnAction(actionEvent -> {
             offOn.setStyle("-fx-text-fill-color: green;");
