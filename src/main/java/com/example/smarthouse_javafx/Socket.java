@@ -12,9 +12,6 @@ public class Socket  implements Electro {
         this.text_socket = text_socket;
     }
 
-    public boolean isOnOff() {
-        return onOff;
-    }
 
     public String getDevice() {
         return device;

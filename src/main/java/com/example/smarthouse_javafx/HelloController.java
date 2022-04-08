@@ -14,19 +14,6 @@ public  class HelloController {
     List<Socket> socketsList  = new ArrayList<>();
 
 
-    public HelloController() {
-        socketsList.add(socket1);
-        socketsList.add(socket2);
-        socketsList.add(socket3);
-        socketsList.add(socket4);
-        socketsList.add(socket5);
-        socketsList.add(socket6);
-        socketsList.add(socket7);
-        socketsList.add(socket8);
-        socketsList.add(socket9);
-        socketsList.add(socket10);
-    }
-
     @FXML
     private ResourceBundle resources;
 
@@ -126,16 +113,7 @@ public  class HelloController {
     private Label text_socket_9;
 
 
-    Socket socket1 = new Socket(text_socket_1);
-    Socket socket2 = new Socket(text_socket_2);
-    Socket socket3 = new Socket(text_socket_3);
-    Socket socket4 = new Socket(text_socket_4);
-    Socket socket5 = new Socket(text_socket_5);
-    Socket socket6 = new Socket(text_socket_6);
-    Socket socket7 = new Socket(text_socket_7);
-    Socket socket8 = new Socket(text_socket_8);
-    Socket socket9 = new Socket(text_socket_9);
-    Socket socket10 = new Socket(text_socket_10);
+
 
     @FXML
     void initialize() {
@@ -170,15 +148,44 @@ public  class HelloController {
         assert text_socket_8 != null : "fx:id=\"text_socket_8\" was not injected: check your FXML file 'hello-view.fxml'.";
         assert text_socket_9 != null : "fx:id=\"text_socket_9\" was not injected: check your FXML file 'hello-view.fxml'.";
 
+        List<Socket> socketsList  = new ArrayList<>();
+        Socket socket1 = new Socket(text_socket_1);
+        Socket socket2 = new Socket(text_socket_2);
+        Socket socket3 = new Socket(text_socket_3);
+        Socket socket4 = new Socket(text_socket_4);
+        Socket socket5 = new Socket(text_socket_5);
+        Socket socket6 = new Socket(text_socket_6);
+        Socket socket7 = new Socket(text_socket_7);
+        Socket socket8 = new Socket(text_socket_8);
+        Socket socket9 = new Socket(text_socket_9);
+        Socket socket10 = new Socket(text_socket_10);
+
+        socketsList.add(socket1);
+        socketsList.add(socket2);
+        socketsList.add(socket3);
+        socketsList.add(socket4);
+        socketsList.add(socket5);
+        socketsList.add(socket6);
+        socketsList.add(socket7);
+        socketsList.add(socket8);
+        socketsList.add(socket9);
+        socketsList.add(socket10);
+
+
+
+
 
         on_electro.setOnAction(actionEvent -> {
             offOn.setStyle("-fx-text-fill-color: green;");
             offOn.setStyle("-fx-text-fill: #7FFF00;");
             offOn.setText("On");
+
             socketsList.forEach(socket -> {socket.setOnOff(true);});
 
 
         });
+
+
 
 
     }
