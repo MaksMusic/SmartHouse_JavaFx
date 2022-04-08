@@ -117,36 +117,7 @@ public  class HelloController {
 
     @FXML
     void initialize() {
-        assert device_floor2 != null : "fx:id=\"device_floor2\" was not injected: check your FXML file 'hello-view.fxml'.";
-        assert device_floor21 != null : "fx:id=\"device_floor21\" was not injected: check your FXML file 'hello-view.fxml'.";
-        assert offOn != null : "fx:id=\"offOn\" was not injected: check your FXML file 'hello-view.fxml'.";
-        assert off_electro != null : "fx:id=\"off_electro\" was not injected: check your FXML file 'hello-view.fxml'.";
-        assert off_two_floor1 != null : "fx:id=\"off_two_floor1\" was not injected: check your FXML file 'hello-view.fxml'.";
-        assert off_two_floor2 != null : "fx:id=\"off_two_floor2\" was not injected: check your FXML file 'hello-view.fxml'.";
-        assert on_electro != null : "fx:id=\"on_electro\" was not injected: check your FXML file 'hello-view.fxml'.";
-        assert on_one_floor1 != null : "fx:id=\"on_one_floor1\" was not injected: check your FXML file 'hello-view.fxml'.";
-        assert on_two_floor2 != null : "fx:id=\"on_two_floor2\" was not injected: check your FXML file 'hello-view.fxml'.";
-        assert socket_1 != null : "fx:id=\"socket_1\" was not injected: check your FXML file 'hello-view.fxml'.";
-        assert socket_10 != null : "fx:id=\"socket_10\" was not injected: check your FXML file 'hello-view.fxml'.";
-        assert socket_2 != null : "fx:id=\"socket_2\" was not injected: check your FXML file 'hello-view.fxml'.";
-        assert socket_3 != null : "fx:id=\"socket_3\" was not injected: check your FXML file 'hello-view.fxml'.";
-        assert socket_4 != null : "fx:id=\"socket_4\" was not injected: check your FXML file 'hello-view.fxml'.";
-        assert socket_5 != null : "fx:id=\"socket_5\" was not injected: check your FXML file 'hello-view.fxml'.";
-        assert socket_6 != null : "fx:id=\"socket_6\" was not injected: check your FXML file 'hello-view.fxml'.";
-        assert socket_7 != null : "fx:id=\"socket_7\" was not injected: check your FXML file 'hello-view.fxml'.";
-        assert socket_8 != null : "fx:id=\"socket_8\" was not injected: check your FXML file 'hello-view.fxml'.";
-        assert socket_9 != null : "fx:id=\"socket_9\" was not injected: check your FXML file 'hello-view.fxml'.";
-        assert text_Smart_House != null : "fx:id=\"text_Smart_House\" was not injected: check your FXML file 'hello-view.fxml'.";
-        assert text_socket_1 != null : "fx:id=\"text_socket_1\" was not injected: check your FXML file 'hello-view.fxml'.";
-        assert text_socket_10 != null : "fx:id=\"text_socket_10\" was not injected: check your FXML file 'hello-view.fxml'.";
-        assert text_socket_2 != null : "fx:id=\"text_socket_2\" was not injected: check your FXML file 'hello-view.fxml'.";
-        assert text_socket_3 != null : "fx:id=\"text_socket_3\" was not injected: check your FXML file 'hello-view.fxml'.";
-        assert text_socket_4 != null : "fx:id=\"text_socket_4\" was not injected: check your FXML file 'hello-view.fxml'.";
-        assert text_socket_5 != null : "fx:id=\"text_socket_5\" was not injected: check your FXML file 'hello-view.fxml'.";
-        assert text_socket_6 != null : "fx:id=\"text_socket_6\" was not injected: check your FXML file 'hello-view.fxml'.";
-        assert text_socket_7 != null : "fx:id=\"text_socket_7\" was not injected: check your FXML file 'hello-view.fxml'.";
-        assert text_socket_8 != null : "fx:id=\"text_socket_8\" was not injected: check your FXML file 'hello-view.fxml'.";
-        assert text_socket_9 != null : "fx:id=\"text_socket_9\" was not injected: check your FXML file 'hello-view.fxml'.";
+
 
         List<Socket> socketsList  = new ArrayList<>();
         Socket socket1 = new Socket(text_socket_1);
